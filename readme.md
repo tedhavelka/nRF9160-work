@@ -23,9 +23,12 @@ Primary goals include:
 2.  communicate with and log data from Sparkfun nRF9160 Thing Plus development board
 3.  craft a GNU make or cmake based project to manage builds of building block, experimental firmwares
 
-**- REFERENCES -**
+**- REFERENCES -**<br />
 Hardware datasheets
 <ul><!-- wrong use of HTML 'ul' tag pair, must find markdown indenting syntax - TMH -->
 *  https://www.st.com/resource/en/datasheet/lis2dh12.pdf
 </ul>
-
+RTOS references
+<ul>
+*  https://docs.zephyrproject.org/latest/reference/peripherals/i2c.html
+</ul>
