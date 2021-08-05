@@ -1,7 +1,7 @@
-**- OVERVIEW -**:
-This repository at https://github.com/tedhavelka/nRF9160-work/new/main a starting point for some mostly general explorations in coding for the ARM Cortex-M33 processor in Nordicsemi's nRF9160 System in Package (SiP).
+**- OVERVIEW -**<br />
+This repository at https://github.com/tedhavelka/nRF9160-work a starting point for some mostly general explorations in coding for the ARM Cortex-M33 processor in Nordicsemi's nRF9160 System in Package (SiP).
 
-**- SUPPORTING MATERIAL -**
+**- SUPPORTING MATERIAL -**<br />
 Work here beginning with programming and experiment of Sparkfun's "Thing Plus" board. This dev kit detailed at:
 *  https://learn.sparkfun.com/tutorials/nrf9160-thing-plus-hookup-guide#introduction
 
@@ -17,7 +17,7 @@ $ west init -m https://github.com/nrfconnect/sdk-nrf --mr v1.4.1
 
 An additional step (or steps) are needed to amend this SDK with example Zephyr RTOS oriented code demos from CircuitDojo.  With these amendments, one then has firmware example code with board support for Sparkfun's Thing Plus development board.
 
-**- GOALS -**
+**- GOALS -**<br />
 Primary goals include:
 1.  find and leverage or develop code to realize I2C, SPI and serial protocols in the nRF9160
 2.  communicate with and log data from Sparkfun nRF9160 Thing Plus development board
