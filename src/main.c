@@ -9,6 +9,11 @@
 #include <devicetree.h>
 #include <drivers/gpio.h>
 
+// 2021-08-06 - blink-custom first addition of Zephyr functionality:
+#include <sys/printk.h>
+
+
+
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   400 // 1000
 
@@ -47,5 +52,7 @@ void main(void)
 		gpio_pin_set(dev, PIN, (int)led_is_on);
 		led_is_on = !led_is_on;
 		k_msleep(SLEEP_TIME_MS);
+
+                printk("Hello World! %s\n", CONFIG_BOARD);
 	}
 }
