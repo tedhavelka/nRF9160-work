@@ -5,7 +5,7 @@ This repository at https://github.com/tedhavelka/nRF9160-work a starting point f
 Work here beginning with programming and experimentation with Sparkfun's "nRF9160 Thing Plus" board. This development kit detailed at:
 *  https://learn.sparkfun.com/tutorials/nrf9160-thing-plus-hookup-guide#introduction
 
-And some instructions with get a developer pretty far toward compiling and running demo firmwares for this board:
+And some instructions which when followed carefully can move a developer pretty far toward compiling and running demo firmwares for this board:
 *  https://learn.sparkfun.com/tutorials/nrf9160-thing-plus-hookup-guide#example---blinky
 
 What seems missing from above toolchain and SDK install instructions, are specific steps to obtain a recent 'ncs' software development kit.  Here 'ncs' stands for Nordic Connect SDK.  The following Nordic web page, however, talks about a specific release of 'ncs':
