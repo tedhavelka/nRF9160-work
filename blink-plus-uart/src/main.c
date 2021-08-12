@@ -15,7 +15,7 @@
 
 
 /* 1000 msec = 1 sec */
-#define SLEEP_TIME_MS   2000 // 400 // 1000
+#define SLEEP_TIME_MS   3600 // 400 // 1000
 
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led0)
@@ -32,11 +32,23 @@
 #define FLAGS	0
 #endif
 
+
+void query_kx132_id(const struct device *dev_ptr_accelerometer, unsigned int options)
+{
+
+    if ( dev_ptr_accelerometer != NULL ) { }
+
+    if ( options > 0 ) { }
+
+}
+
+
 void main(void)
 {
 	const struct device *dev;
 	bool led_is_on = true;
 	int ret;
+
 
 	dev = device_get_binding(LED0);
 	if (dev == NULL) {
@@ -48,11 +60,33 @@ void main(void)
 		return;
 	}
 
+
+        const struct device *dev_accelerometer;
+        dev_accelerometer = DEVICE_DT_GET(DT_NODELABEL(kionix_sensor));
+	if (dev_accelerometer == NULL) {
+            printk("Failed to init Kionix sensor device pointer!\n");
+            printk("firmware exiting early, done.\n\n");
+            return;
+	}
+
+
+// 2021-08-11 WED - 
+        query_kx132_id(dev_accelerometer, 0);
+
+
+
 	while (1) {
 		gpio_pin_set(dev, PIN, (int)led_is_on);
 		led_is_on = !led_is_on;
 		k_msleep(SLEEP_TIME_MS);
 
-                printk("Hello World! %s\n", CONFIG_BOARD);
+		if ( led_is_on == 0 )
+                {
+                    printk("Hello World! %s\n", CONFIG_BOARD);
+                }
+                else
+                {
+                    printk("Hello World! %s\n\n", CONFIG_BOARD);
+                }
 	}
 }
