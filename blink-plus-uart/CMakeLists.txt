@@ -5,3 +5,5 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(blink-plus-uart)
 
 target_sources(app PRIVATE src/main.c)
+
+add_subdirectory(drivers)
