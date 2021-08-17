@@ -1,0 +1,3 @@
+comment "Device Drivers"
+
+rsource "kionix/Kconfig"

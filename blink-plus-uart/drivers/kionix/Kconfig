@@ -1,0 +1,3 @@
+comment "Kionix drivers"
+
+rsource "kx132-1211/Kconfig"

@@ -32,6 +32,11 @@
 #define FLAGS    0
 #endif
 
+// 2021-08-17 - adding symbol to allow for enabling local driver under development:
+#define KX132_1211
+
+
+
 
 void query_kx132_id(const struct device *dev_ptr_accelerometer, unsigned int options)
 {
