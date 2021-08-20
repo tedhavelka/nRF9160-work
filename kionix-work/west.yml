@@ -1,0 +1,16 @@
+# Copyright (c) 2021 <team name here>
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  self:
+    path: kionix-work
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import: true
