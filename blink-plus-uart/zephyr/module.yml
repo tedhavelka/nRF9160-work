@@ -1,5 +1,5 @@
 build:
-  cmake: .
-  kconfig: Kconfig
-  settings:
-    dts_root: .
+  cmake: drivers
+  kconfig: drivers/Kconfig
+  #  settings:
+  #  dts_root: .
