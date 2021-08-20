@@ -1,3 +1,5 @@
-comment "Kionix drivers"
+# comment "Kionix drivers"
 
+if KIONIX
 rsource "kx132-1211/Kconfig"
+endif # KIONIX
