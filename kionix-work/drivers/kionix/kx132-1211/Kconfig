@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config KX132_1211
+	bool "KX132-1211 accelerometer"
+	depends on I2C
+	help
+	  Enable Kionix KX132-1211 accelerometer

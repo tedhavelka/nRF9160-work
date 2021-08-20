@@ -1,0 +1,29 @@
+/**
+ * @file app_version.h
+ *
+ * Application version information.
+ *
+ * Copyright (c) 2021 <team name here>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#ifndef KIONIX_WORK_VERSION_H_
+#define KIONIX_WORK_VERSION_H_
+
+/** Application major version. */
+#define KIONIX_WORK_VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
+/** Application minor version. */
+#define KIONIX_WORK_VERSION_MINOR ${PROJECT_VERSION_MINOR}
+/** Application patch version. */
+#define KIONIX_WORK_VERSION_PATCH ${PROJECT_VERSION_PATCH}
+
+/** Application version. */
+#define KIONIX_WORK_VERSION \
+	((KIONIX_WORK_VERSION_MAJOR << 16) + \
+	 (KIONIX_WORK_VERSION_MINOR << 8) + \
+	  KIONIX_WORK_VERSION_PATCH)
+
+/** Application version (string). */
+#define KIONIX_WORK_VERSION_STR "${PROJECT_VERSION}"
+
+#endif /* KIONIX_WORK_VERSION_H_ */
