@@ -1,0 +1,5 @@
+menu "stage 1 drivers including Kionix"
+
+rsource "drivers/Kconfig"
+
+endmenu

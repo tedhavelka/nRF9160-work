@@ -4,4 +4,15 @@ menuconfig KX132-1211
     bool "KX132-1211 three axis accelerometer"
     depends on (I2C && HAS_DTS_I2C)
     help
-      Enable I2C based driver for Kionix KX132-1211 accelerometer (SPI driver not yet implemented - TMH)
+      Enable I2C based driver for Kionix KX132-1211 accelerometer
+     (SPI driver not yet implemented - TMH)
+
+if KX132-1211
+
+config KX132_1211_DRV_NAME
+	string "CP IIoT KX132-1211 Driver's name"
+	default "KX132-1211"
+	help
+	  This option sets the driver name
+
+endif # KX132-1211
