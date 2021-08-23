@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
 
-if KIONIX
+#if KIONIX
 rsource "kx132-1211/Kconfig"
-endif # KIONIX
+#endif # KIONIX
