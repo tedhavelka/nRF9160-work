@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 #if KIONIX
+menu "Kionix 1211"
 rsource "kx132-1211/Kconfig"
+endmenu
 #endif # KIONIX
