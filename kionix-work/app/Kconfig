@@ -6,6 +6,10 @@
 # You can browse these options using the west targets menuconfig (terminal) or
 # guiconfig (GUI).
 
+menu "Driver example"
+rsource "../drivers/Kconfig"
+endmenu
+
 menu "Zephyr"
 source "Kconfig.zephyr"
 endmenu

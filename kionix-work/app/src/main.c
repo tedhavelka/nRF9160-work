@@ -12,6 +12,9 @@
 // 2021-08-06 - blink-custom first addition of Zephyr functionality:
 #include <sys/printk.h>
 
+// 2021-08-24
+#include "kx132-1211.h"
+
 
 
 /* 1000 msec = 1 sec */
@@ -80,8 +83,8 @@ void main(void)
 
 
 // 2021-08-11 WED - 
-    query_kx132_id(dev_accelerometer, 0);
-
+//    query_kx132_id(dev_accelerometer, 0);
+    kx132_device_id_fetch(dev_accelerometer, 0);  // second parameter is 'channel', not yet used - TMH
 
 
     while (1) {
