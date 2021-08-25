@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2021 Neela Nurseries
+#
+
+menuconfig KX132-1211
+	bool "Kionix 3-axis acceleromter"
+	depends on I2C
+	help
+	  Enable driver for Kionix 3-axis acceleromter
+
+if KX132_1211
+
+config KX132_1211_DRV_NAME
+	string "Kionix KX132-1211 Driver's name"
+	default "KX132-1211"
+	help
+	  This option sets the driver name
+
+endif # KX132_1211
