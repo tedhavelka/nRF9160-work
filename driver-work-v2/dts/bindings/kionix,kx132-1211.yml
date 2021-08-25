@@ -1,0 +1,9 @@
+#
+# Copyright (c) 2021 Neela Nurseries
+#
+
+description:  Kionix 3-axis accelerometer
+
+compatible: "kionix,kx132-1211"
+
+include: i2c-device.yaml
